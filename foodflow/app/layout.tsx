@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-import Image from "next/image";
 
+
+// component imports
+import { Navbar, Sidebar } from "@/components/NavigationWrappers";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "FoodFlow",
@@ -17,10 +20,22 @@ export default function RootLayout({
   return (
     <html lang="hu">
         <body className={GeistSans.className}>
-            
-            <main>
-                {children}
-            </main>
+            <TooltipProvider>
+                <main className="flex h-screen">
+                    {/* Sidebar */}
+                    <Sidebar />
+
+                    <div className="flex flex-col flex-grow">
+                        {/* Navbar */}
+                        <Navbar />
+
+                        {/* Content Wrapper */}
+                        <div className="flex-grow overflow-y-scroll bg-background">
+                            {children}
+                        </div>
+                    </div>
+                </main>
+            </TooltipProvider>
         </body>
     </html>
   );

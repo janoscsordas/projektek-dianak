@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-    darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,7 +30,6 @@ const config: Config = {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -59,7 +57,16 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+        keyframes: {
+            spinOnce: {
+                '0%': { transform: 'rotate(0deg)'},
+                '100%': { transform: 'rotate(360deg)'}
+            }
+        },
+        animation: {
+            'spin-once': 'spinOnce 1s ease-in-out'
+        }
   	}
   },
   plugins: [require("tailwindcss-animate")],
