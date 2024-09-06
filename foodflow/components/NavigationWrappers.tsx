@@ -11,7 +11,6 @@ import { CalculatorIcon, HeartPulseIcon, House, LogOutIcon, NewspaperIcon, Searc
 
 // component imports
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "./ui/alert-dialog"
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"
 
@@ -67,7 +66,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/" className={`sidebar-item ${pathName === "/healthy-lifestyle" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
+                            <Link href="/" className={`sidebar-item ${pathName === "/news" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
                                 <NewspaperIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>
@@ -76,26 +75,6 @@ export function Sidebar() {
                         </TooltipContent>
                     </Tooltip>
                 </div>
-
-                <AlertDialog>
-                    <AlertDialogTrigger>
-                        <span className="sidebar-item bg-destructive" title="Kilépés">
-                            <LogOutIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
-                        </span>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent>
-                        <AlertDialogHeader>
-                            <AlertDialogTitle>Biztos, hogy ki akar lépni?</AlertDialogTitle>
-                            <AlertDialogDescription>
-                                Ha most kilép, bármikor visszajöhet, úgyhogy csak nyugodtan.
-                            </AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <AlertDialogFooter>
-                            <AlertDialogCancel>Mégse</AlertDialogCancel>
-                            <AlertDialogAction onClick={() => window.close()} className="bg-destructive hover:bg-destructive/90 text-white">Kilépés</AlertDialogAction>
-                        </AlertDialogFooter>
-                    </AlertDialogContent>
-                </AlertDialog>
             </nav>
         </aside>
     )

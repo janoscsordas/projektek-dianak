@@ -1,15 +1,15 @@
 {
     "groceries": [
-        { "id": 1, "name": "Eggs" },
-        { "id": 2, "name": "Milk" },
-        { "id": 3, "name": "Bread" },
-        { "id": 4, "name": "Butter" },
-        { "id": 5, "name": "Cheese" },
-        { "id": 6, "name": "Apples" },
-        { "id": 7, "name": "Bananas" },
-        { "id": 8, "name": "Carrots" },
-        { "id": 9, "name": "Potatoes" },
-        { "id": 10, "name": "Onions" },
-        { "id": 11, "name": "Lettuce" }
+        { "id": 1, "name": "Tojás", "category": "Tejtermék", "categoryName": "dairy" },
+        { "id": 2, "name": "Tej", "category": "Tejtermék", "categoryName": "dairy" },
+        { "id": 3, "name": "Kenyér", "category": "Pékáru", "categoryName": "bakery" },
+        { "id": 4, "name": "Vaj", "category": "Tejtermék", "categoryName": "dairy" },
+        { "id": 5, "name": "Sajt", "category": "Tejtermék", "categoryName": "dairy" },
+        { "id": 6, "name": "Alma", "category": "Gyümölcs", "categoryName": "fruit" },
+        { "id": 7, "name": "Banán", "category": "Gyümölcs", "categoryName": "fruit" },
+        { "id": 8, "name": "Répa", "category": "Gyümölcs", "categoryName": "fruit" },
+        { "id": 9, "name": "Krumpli", "category": "Zöldség", "categoryName": "vegetable" },
+        { "id": 10, "name": "Hagyma", "category": "Zöldség", "categoryName": "vegetable" },
+        { "id": 11, "name": "Saláta", "category": "Zöldség", "categoryName": "vegetable" }
     ]
 }

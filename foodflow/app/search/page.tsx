@@ -14,11 +14,13 @@ export default async function SearchPage({
     return (
         <section className="w-full h-full">
             <div className="py-10">
-                <h1 className="text-3xl font-semibold text-center">A keresett termék: <span className="text-primary font-bold">{searchParams.q}</span></h1>
+                <h1 className="text-4xl font-bold text-center">A keresési találatok erre: <span className="text-primary font-extrabold ">{searchParams.q}</span></h1>
 
-                <Suspense fallback={<Loading />}>
-                    <SearchGrocery searchQuery={searchParams.q} />
-                </Suspense>
+                <div>
+                    <Suspense fallback={<Loading />}>
+                        <SearchGrocery searchQuery={searchParams.q} />
+                    </Suspense>
+                </div>
             </div>
         </section>
     )
