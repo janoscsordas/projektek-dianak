@@ -76,18 +76,75 @@
   }
 }
 
+/* card styles */
+.card {
+    @apply
+      bg-white
+      shadow-md
+      rounded-md
+      py-3 px-4 my-4
+      relative
+      overflow-hidden;
+}
+.card h3 {
+    @apply
+      font-bold text-gray-700 text-sm
+      mb-0 2xl:text-2xl;
+}
+.card p {
+    @apply my-4 text-sm leading-6 2xl:text-xl;
+}
+
 .dairy {
     @apply bg-blue-500
 }
 
-.bakery {
-    @apply bg-orange-800
+/* pill styles */
+.pill {
+    @apply
+      py-1 px-2 mt-3
+      inline-block
+      text-xs font-semibold;
 }
 
-.fruit {
-    @apply bg-red-500
+.pill.fruit {
+    @apply bg-red-300 text-red-600;
 }
 
-.vegetable {
-    @apply bg-green-500
+.pill.dairy {
+    @apply bg-blue-300 text-blue-600;
+}
+
+.pill.vegetable {
+    @apply bg-emerald-300 text-emerald-600;
+}
+
+.pill.bakery {
+    @apply bg-orange-950 text-orange-300;
+}
+
+.card .pill {
+    @apply
+      absolute bottom-0 right-0
+      rounded-tl-md;
+}
+
+.article {
+    @apply w-[90%] mx-auto sm:w-[85%] md:w-2/3 lg:w-[70%] xl:w-[60%] 2xl:w-1/2
+}
+
+.article h2 {
+    @apply text-xl my-1 font-semibold
+}
+
+.article p {
+    @apply text-justify my-5
+}
+
+.paragraphs {
+    @apply mb-10 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] sm:w-[85%] md:w-2/3 lg:w-[70%] xl:w-[60%] 2xl:w-1/2 mx-auto p-5 border border-border rounded-md
+}
+
+.paragraphs a {
+    @apply underline font-medium text-primary hover:opacity-65 transition-opacity duration-150
 }

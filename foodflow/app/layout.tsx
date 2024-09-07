@@ -30,7 +30,7 @@ export default function RootLayout({
                         <Navbar />
 
                         {/* Content Wrapper */}
-                        <div className="flex-grow overflow-y-scroll bg-background">
+                        <div className="flex-grow overflow-y-scroll bg-gray-100 py-4 px-8">
                             {children}
                         </div>
                     </div>

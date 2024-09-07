@@ -1,4 +1,4 @@
-import SearchGrocery from "@/components/SearchGrocery";
+import SearchGrocery from "@/app/search/SearchGrocery";
 import notFound from "./not-found";
 import { Suspense } from "react"
 import Loading from "@/app/search/loading"
@@ -13,7 +13,7 @@ export default async function SearchPage({
 
     return (
         <section className="w-full h-full">
-            <div className="py-10">
+            <div className="py-5">
                 <h1 className="text-4xl font-bold text-center">A keresési találatok erre: <span className="text-primary font-extrabold ">{searchParams.q}</span></h1>
 
                 <div>

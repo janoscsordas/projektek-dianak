@@ -18,11 +18,11 @@ export function Sidebar() {
     const pathName = usePathname()
 
     return (
-        <aside className="w-20 bg-black">
+        <aside className="w-20 md:min-w-20 md:max-w-20 bg-black">
             <div className="h-16 border-b border-border flex justify-center items-center px-2 md:px-0">
                 <Image src={Logo} alt="logo" width={42} height={42} />
             </div>
-            <nav className="h-[calc(100vh-4rem)] flex flex-col justify-between items-center gap-6 py-6 overflow-y-scroll no-scrollbar">
+            <nav className="h-[calc(100vh-4rem)] flex flex-col justify-between items-center gap-6 py-6 overflow-y-scroll no-scrollbar px-2 md:px-0">
                 <div className="flex flex-col gap-6 justify-between items-center">
                     <Tooltip>
                         <TooltipTrigger>
@@ -36,7 +36,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/" className={`sidebar-item ${pathName === "/groceries" ? "bg-primary hover:opacity-85 transition-opacity duration-100" : "hover:bg-zinc-600"}`}>
+                            <Link href="/grocery" className={`sidebar-item ${pathName === "/grocery" ? "bg-primary hover:opacity-85 transition-opacity duration-100" : "hover:bg-zinc-600"}`}>
                                 <ShoppingBasketIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>
@@ -46,7 +46,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/" className={`sidebar-item ${pathName === "/calculator" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
+                            <Link href="/calculator" className={`sidebar-item ${pathName === "/calculator" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
                                 <CalculatorIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>
@@ -56,7 +56,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/" className={`sidebar-item ${pathName === "/healthy-lifestyle" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
+                            <Link href="/healthy-lifestyle" className={`sidebar-item ${pathName === "/healthy-lifestyle" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
                                 <HeartPulseIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>
@@ -66,7 +66,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/" className={`sidebar-item ${pathName === "/news" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
+                            <Link href="/news" className={`sidebar-item ${pathName === "/news" ? "bg-primary hover:opacity-85" : "hover:bg-zinc-600"}`}>
                                 <NewspaperIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>
@@ -95,10 +95,10 @@ export function Navbar() {
     }
 
     return (
-        <header className="w-full min-h-16 max-h-16 bg-background border-b border-border flex justify-between items-center px-6">
+        <header className="w-full min-h-16 max-h-16 bg-background border-b border-border flex justify-between items-center px-6 gap-4 sm:gap-0">
             <div className="flex gap-2">
                 <h1 className="hidden sm:block text-[1.75rem] font-extrabold bg-gradient-to-tr from-primary to-green-600 bg-clip-text text-transparent capitalize">FoodFlow</h1>
-                <span className="text-[1.75rem] hidden sm:inline-block hover:animate-spin-once hover:cursor-not-allowed">🥪</span>
+                <span className="text-[1.75rem] inline-block hover:animate-spin-once hover:cursor-not-allowed">🥪</span>
             </div>
             <div>
                 <form className="flex gap-2" onSubmit={handleSearch}>

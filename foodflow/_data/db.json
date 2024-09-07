@@ -1,15 +1,81 @@
 {
     "groceries": [
-        { "id": 1, "name": "Tojás", "category": "Tejtermék", "categoryName": "dairy" },
-        { "id": 2, "name": "Tej", "category": "Tejtermék", "categoryName": "dairy" },
-        { "id": 3, "name": "Kenyér", "category": "Pékáru", "categoryName": "bakery" },
-        { "id": 4, "name": "Vaj", "category": "Tejtermék", "categoryName": "dairy" },
-        { "id": 5, "name": "Sajt", "category": "Tejtermék", "categoryName": "dairy" },
-        { "id": 6, "name": "Alma", "category": "Gyümölcs", "categoryName": "fruit" },
-        { "id": 7, "name": "Banán", "category": "Gyümölcs", "categoryName": "fruit" },
-        { "id": 8, "name": "Répa", "category": "Gyümölcs", "categoryName": "fruit" },
-        { "id": 9, "name": "Krumpli", "category": "Zöldség", "categoryName": "vegetable" },
-        { "id": 10, "name": "Hagyma", "category": "Zöldség", "categoryName": "vegetable" },
-        { "id": 11, "name": "Saláta", "category": "Zöldség", "categoryName": "vegetable" }
+        {
+            "id": 1,
+            "name": "Tojás",
+            "searchDescription": "Tyúkból származó, emberi fogyasztásra is alkalmas.",
+            "category": "Tejtermék",
+            "categoryName": "dairy"
+        },
+        {
+            "id": 2,
+            "name": "Tej",
+            "searchDescription": "A Tehén teje, ami emberi fogyasztásra is alkalmas.",
+            "category": "Tejtermék",
+            "categoryName": "dairy"
+        },
+        {
+            "id": 3,
+            "name": "Kenyér",
+            "searchDescription": "Lisztből elkészített, megsütött pékáru",
+            "category": "Pékáru",
+            "categoryName": "bakery"
+        },
+        {
+            "id": 4,
+            "name": "Vaj",
+            "searchDescription": "Emlős állatok tejéből készül, emberi táplálkozásra szolgáló zsiradék.",
+            "category": "Tejtermék",
+            "categoryName": "dairy"
+        },
+        {
+            "id": 5,
+            "name": "Sajt",
+            "searchDescription": "Tejből készülő élelmiszer.",
+            "category": "Tejtermék",
+            "categoryName": "dairy"
+        },
+        {
+            "id": 6,
+            "name": "Alma",
+            "searchDescription": "Édes vagy savanyú gyümölcs.",
+            "category": "Gyümölcs",
+            "categoryName": "fruit"
+        },
+        {
+            "id": 7,
+            "name": "Banán",
+            "searchDescription": "A banán a trópusokon elterjedt és termesztett egyszikű, lágy szárú gyümölcs.",
+            "category": "Gyümölcs",
+            "categoryName": "fruit"
+        },
+        {
+            "id": 8,
+            "name": "Répa",
+            "searchDescription": "Földben termesztett zöldség.",
+            "category": "Gyümölcs",
+            "categoryName": "fruit"
+        },
+        {
+            "id": 9,
+            "name": "Krumpli",
+            "searchDescription": "Földben termesztett zöldség.",
+            "category": "Zöldség",
+            "categoryName": "vegetable"
+        },
+        {
+            "id": 10,
+            "name": "Vöröshagyma",
+            "searchDescription": "Kellemes aromája és kevésbé csípős izével hódít.",
+            "category": "Zöldség",
+            "categoryName": "vegetable"
+        },
+        {
+            "id": 11,
+            "name": "Saláta",
+            "searchDescription": "Többnyire levélzöldségként termesztik.",
+            "category": "Zöldség",
+            "categoryName": "vegetable"
+        }
     ]
 }
