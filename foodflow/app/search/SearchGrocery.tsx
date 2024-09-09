@@ -35,10 +35,10 @@ export default async function SearchGrocery({searchQuery}: {searchQuery: string}
 
     return (
         <>
-            <div className="px-10 mt-10 mx-auto w-[75%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-5">
+            <div className="px-10 mt-10 mx-auto w-[75%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5">
                 {searchedGroceries.map((grocery) => (
                     <div key={grocery.id} className="card">
-                        <Link href={`/grocery/${grocery.id}`}>
+                        <Link href={`/groceries/${grocery.id}`}>
                             <h3>{grocery.name}</h3>
                             <p>{grocery.searchDescription}</p>
                             <div className={`pill ${grocery.categoryName}`}>

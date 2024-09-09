@@ -36,7 +36,7 @@ export function Sidebar() {
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger>
-                            <Link href="/grocery" className={`sidebar-item ${pathName === "/grocery" ? "bg-primary hover:opacity-85 transition-opacity duration-100" : "hover:bg-zinc-600"}`}>
+                            <Link href="/groceries" className={`sidebar-item ${pathName === "/groceries" ? "bg-primary hover:opacity-85 transition-opacity duration-100" : "hover:bg-zinc-600"}`}>
                                 <ShoppingBasketIcon className="w-5 h-5" strokeWidth={1.75} color="white" />
                             </Link>
                         </TooltipTrigger>

@@ -77,5 +77,31 @@
             "category": "Zöldség",
             "categoryName": "vegetable"
         }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "title": "Súlyos dolog derült ki a legolcsóbb magyar élelmiszerekről: ezt minden vásárlónak tudnia kell",
+            "article": "A Nemzeti Élelmiszerlánc-biztonsági Hivatal (Nébih) a fogyasztók védelme érdekében az Árfigyelő rendszer legolcsóbb élelmiszereit ellenőrizte - olvasható a hivatal közleményében. Az alapélelmiszerekre fókuszáló első célellenőrzés során 5 élelmiszercsoport 3-3 termékét vizsgálták a szakemberek. Az előírt követelményeknek egy párizsi kivételével minden termék megfelelt – összegezte az eredményeket dr. Nobilis Márton élelmiszeriparért és kereskedelempolitikáért felelős államtitkár. Az Árfigyelő rendszerben megjelenő élelmiszerek minőségét vizsgáló ellenőrzés-sorozatot indított a Nébih. Az akció kapcsán dr. Nobilis Márton élelmiszeriparért és kereskedelempolitikáért felelős államtitkár kiemelte: a vizsgálat elsődleges célja, hogy a magyar emberek biztosak lehessenek benne, nem csak olcsó, de minőségileg is kifogástalan termékekhez jutnak hozzá. Az első célellenőrzés alkalmával az alapélelmiszerekre fókuszáltak az ellenőrök: búzaliszt, kenyér, UHT tej, tojás és párizsi került a hatósági kosárba. A vizsgált termékeket az Árfigyelő rendszer segítségével választották ki. Élelmiszercsoportonként a 3 legolcsóbb terméket ellenőrizték a szakemberek, ügyelve arra, hogy azok különböző üzletláncok kínálatából kerüljenek ki. A hatóság a termékek legfontosabb minőségi paramétereit ellenőrizte, mint például a tej esetében a zsír-, a búza finomlisztnél a hamu- vagy a párizsiban a kalciumtartalom. A vizsgált 15 termékből egy párizsival volt probléma – ismertette az államtitkár. A kifogásolt, nem hazai előállítású pulykapárizsi kalciumtartalma meghaladta a Magyar Élelmiszerkönyvben előírt határértéket. Ez pedig azt bizonyítja, hogy a termék tartalmaz csontokról mechanikusan lefejtett húst (MSM) is, amit azonban az összetevők között nem jelöltek. A termék kapcsán hatósági eljárás indult, mely során élelmiszer-ellenőrzési bírság kiszabására is számíthat a felelős magyarországi forgalmazó. Kutatás: a kereskedelmi márkás termékek megítélése Magyarországon. A saját- avagy kereskedelmi márkák térhódítása kéz a kézben jár természetesen a fogyasztók árérzékenységével, amelyet egy-egy gazdasági válság, és a nyomában kialakuló egzisztenciális problémák csak még inkább tetéznek. Nagy kérdés ugyanakkor, hogy mindezek ellenére milyen is ezen olcsóbb, helyettesítő termékek megítélése a fogyasztók körében. A következő hetekben a Pénzcentrum és a Debreceni Egyetem közös, nagymintás felmérést végez, hogy kiderüljön, hogyan vélekednek a hazai vásárlók az ún. kereskedelmi/saját márkás, illetve a gyártói márkás termékekről. Az alábbiakban arra szeretnénk megkérni, hogy töltsd ki a kérdőívet, ezzel segítve munkánkat. A kutatás név nélküli és önkéntes, semmilyen visszakeresési lehetőséget nem tartalmaz, mindösszesen néhány percet vesz igénybe. A kutatás eredményeit a Pénzcentrum online felületén fogjuk közzétenni. Köszönjük, hogy részt veszel a kutatásban!",
+            "date": "2024.09.05"
+        },
+        {
+            "id": 2,
+            "title": "Valami",
+            "article": "Lorem ipsum dolor sit amet algo.",
+            "date": "2024.09.05"
+        },
+        {
+            "id": 3,
+            "title": "Valami",
+            "article": "Lorem ipsum dolor sit amet algo.",
+            "date": "2024.09.05"
+        },
+        {
+            "id": 4,
+            "title": "Valami",
+            "article": "Lorem ipsum dolor sit amet algo.",
+            "date": "2024.09.05"
+        }
     ]
 }

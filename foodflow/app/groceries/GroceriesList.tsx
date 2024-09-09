@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-type groceryCategory = {
+export type Grocery = {
     id: number
     categoryName: string
     category: string
@@ -15,7 +15,7 @@ async function getGroceryCategories() {
         return "Hiba az adatok lekérdezésekor"
     }
 
-    const data: groceryCategory[] = await response.json()
+    const data: Grocery[] = await response.json()
 
     return data
 }
@@ -36,7 +36,7 @@ export default async function CategoriesList() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-x-5">
             {groceries.map((grocery) => (
                 <div key={grocery.id} className="card">
-                    <Link href={`/grocery-category/${grocery.id}`}>
+                    <Link href={`/groceries/${grocery.id}`}>
                         <h3>{grocery.name}</h3>
                         <p>{grocery.searchDescription}</p>
                         <div className={`pill ${grocery.categoryName}`}>{grocery.category}</div>
