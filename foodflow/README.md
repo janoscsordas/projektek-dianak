@@ -1,1 +1,19 @@
-# TODO: Search Page designing, Set up groceries in db.json, Making grocery types page, Making single grocery pages etc
+# FoodFlow Projekt
+
+## made with NextJS
+
+```bash
+#npm
+npm install
+
+npm run dev
+npm run jsonserver
+
+#bun
+bun install
+
+bun dev
+bun jsonserver
+```
+
+foodflow
