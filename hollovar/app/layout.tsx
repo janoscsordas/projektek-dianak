@@ -19,7 +19,7 @@ export default function RootLayout({
         className={`${GeistSans.className} antialiased`}
       >
         {/* navigation wrapper */}
-        <header className="w-full fixed top-0 left-0 p-5 bg-white text-black">
+        <header className="w-full fixed top-0 left-0 p-5 bg-white text-black z-50">
             <nav className="w-full lg:w-1/2 mx-auto flex items-center lg:items-start justify-between">
                 <Link href="/" className="">
                     <h2 className="tracking-widest lg:text-center text-xl font-bold select-none">Hollóvár</h2>
