@@ -19,13 +19,13 @@ export default function RootLayout({
         className={`${GeistSans.className} antialiased`}
       >
         {/* navigation wrapper */}
-        <header className="w-full fixed top-0 left-0 p-5 bg-white text-black z-50">
+        <header className="w-full absolute top-0 left-0 p-4 bg-white text-black z-50">
             <nav className="w-full lg:w-1/2 mx-auto flex items-center lg:items-start justify-between">
                 <Link href="/" className="">
                     <h2 className="tracking-widest lg:text-center text-xl font-bold select-none">Hollóvár</h2>
                     <p className="text-md text-center select-none">A felfedezett vár</p>
                 </Link>
-                <div className="flex gap-5 mt-1 items-center">
+                <div className="hidden sm:flex gap-5 mt-1 items-center">
                     <Link href="/programok" className="hover:text-lime-600 transition-colors duration-150 font-light select-none">Programok</Link>
                     <Link href="/nyitvatartas" className="hover:text-lime-600 transition-colors duration-150 font-light select-none">Nyitvatartás</Link>
                     <Link href="/kapcsolat" className="hover:text-lime-600 transition-colors duration-150 font-light select-none">Kapcsolat</Link>
@@ -38,6 +38,11 @@ export default function RootLayout({
         <main className="min-h-screen w-full">
             {children}
         </main>
+
+        {/* footer content */}
+        <footer className="w-full text-center">
+            <p className="text-gray-500">Hollóvár Inc. 2024 &copy; Minden jog fenntartva.</p>
+        </footer>
       </body>
     </html>
   );
