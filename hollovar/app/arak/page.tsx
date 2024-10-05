@@ -5,7 +5,7 @@ const tiers = [
     name: 'Alap felszereltség',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '22.500 Ft',
+    priceMonthly: '25.500 Ft',
     description: "Tökéletes azoknak, akiket csak a Hollóvár és annak története érdekel.",
     features: ['Fél nap a Hollóvárban', 'Ingyenes ebéd', 'Restaurálás és történet megismerése', 'Hollóvár játék'],
     featured: false,
@@ -14,7 +14,7 @@ const tiers = [
     name: 'Profi felszereltség',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '41.350 Ft',
+    priceMonthly: '45.350 Ft',
     description: 'Azok számára ajánljuk ezt, akik a Hollóváron kívül a közeli erdőket is felszeretné fedezni.',
     features: [
       'Egész nap a Hollóvárban',
@@ -85,7 +85,7 @@ export default function OpeningHoursPage() {
               >
                 {tier.priceMonthly}
               </span>
-              <span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>/fő</span>
+              <span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>/ 3 fő</span>
             </p>
             <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-6 text-base leading-7')}>
               {tier.description}
