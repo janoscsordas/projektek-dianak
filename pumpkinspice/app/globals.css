@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+    @apply flex flex-col h-[300dvh]
+}
+
+.section {
+    @apply h-dvh flex justify-center items-center
+}
